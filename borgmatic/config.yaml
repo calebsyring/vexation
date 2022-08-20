@@ -1,0 +1,34 @@
+location:
+
+    source_directories:
+        - /home/calebsyring
+
+    repositories:
+        - t0h823a1@t0h823a1.repo.borgbase.com:repo
+
+    exclude_from:
+        - /home/calebsyring/projects/vexation/borgmatic/excludes
+
+    exclude_caches: true
+
+storage:
+
+    encryption_passcommand: secret-tool lookup borg-repository repo
+
+retention:
+
+    keep_within: 2w
+
+    keep_daily: 30
+
+    keep_weekly: 52
+
+consistency:
+
+    check_last: 7
+
+hooks:
+
+    cronitor:
+
+        ping_url: https://cronitor.link/p/cbab138342d64e52a0b8a27f3b35ef15/0jvpX7

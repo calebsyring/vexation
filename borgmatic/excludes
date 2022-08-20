@@ -1,0 +1,45 @@
+**/borg-backups/
+
+# Specific paths in every home
+/home/*/.config/Code/Backups
+/home/*/.config/chromium
+/home/*/.config/google-chrome
+/home/*/.gvfs
+/home/*/tmp
+/home/*/.local/share/Trash
+/home/*/.local/share/keybase
+/home/*/.shiv
+/home/*/.config/google-chrome
+/home/*/.kube/*cache
+/home/*/.vscode
+/home/*/snap
+/home/*/backups
+
+# Electron apps
+**/.config/*/Cache
+**/.config/*/CachedData
+**/.config/*/Code Cache
+**/.config/*/GPUCache
+**/.config/*/logs
+**/.config/**/CacheStorage
+
+# Dev Junk
+**/node_modules
+**/bower_components
+**/vendor/bundle
+**/.tox
+**/*.pyc
+**/__pycache__
+**/.sass-cache
+*/.webassets-cache
+
+# other patterns
+**/.cache
+**/tmp
+**/lost+found
+**/*.tmp
+**/.sqlite-journal
+**/.dropbox.cache
+**/.DS_Store
+**/Old Firefox Data
+**/repository-cache
